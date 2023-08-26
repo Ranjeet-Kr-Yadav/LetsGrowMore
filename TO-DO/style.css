@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #17160A;
+    color: #f3f3f3;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ccb7a9;
+    margin-bottom: 1rem;
+
+}
+
+#task-form{
+    display: flex;
+
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ccb7a9;
+}
+
+#task-input{
+    flex: 1 1 0%;
+    background-color: #a37671;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+}
+#task-input::placeholder{
+    color: #f3f3f3;
+}
+#task-submit{
+    background-image: linear-gradient(to-right);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f3f3f3;
+    background: #a37671;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px #a37671;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#task-submit:hover{
+    opacity: 0.8;
+
+}
+#task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container{
+    align-items: center;
+    margin: auto;
+    border-radius: 30px;
+    width: 50%;
+    background-color: #3a4436;
+    box-shadow: 0 3px 8px #4f7b8e;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ccb7a9;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 40px;
+    overflow: hidden;
+}
+.task-list h2 span{
+    font-size: 1rem;
+    font-weight: 300;
+    width: 5px;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #002b15;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#tasks .task .content .text{
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+#tasks .task .content .text:not(:read-only){
+    color: #f3f3f3;
+}
+#tasks .task .action{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .edit{
+    color: red;
+}
+.task .actions .delete{
+    color: crimson;
+}
+
+@media only screen and (max-width: 600px){
+    
+    /* body{
+        width: 100%;
+    } */
+    .container{
+        width: 90%;
+        
+    }
+    #task-form{
+        display: inline-block;
+        
+    }
+    #task-form input{
+        margin-bottom: 10px;
+    }
+    #task-input{
+        padding: 1rem;
+        margin-right: 0rem;
+        font-size: 1rem;
+    }
+}

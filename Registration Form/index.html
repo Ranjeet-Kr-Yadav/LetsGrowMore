@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+   <h1>Student Enrollment Form</h1>
+    <div class="container">
+        
+        <!--Registration Form container-->
+        <div class="registrationcontainer">
+        <!--input fields for registration form-->
+            <table>
+                <tr class="img data">
+                    <td>
+                        <label>Image Url:</label>
+
+                    </td>
+                    <td>
+
+                        <input type="text" id="img" name="img" placeholder="Enter your drive img id">
+                        <p>Img Url Eg:-https://drive.google.com/file/d/ <br> <span style="border:1px solid blue;">1zdLXZppYypxyvCv1rutg8</span><br>/view?usp=sharing)</p>
+                    </td>
+                </tr>
+                
+                <tr class="name data">
+                    <td>
+                        
+                        <label>Name:</label>
+                    
+                    
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="Name" placeholder="Enter Your Name"/>
+
+                    </td>
+                    
+                </tr>
+                <tr class="email data">
+                    <td>
+                        <label>E-Mail:</label>
+                        
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="Email" placeholder="Enter your Email Id"/>
+
+                    </td>
+                </tr>
+                <tr class="websitelink data">
+                    <td>
+
+                        <label>Website Link:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="websitelink" name="WebsiteLink" placeholder="Enter your Website Link"/>
+                    </td>
+                </tr>
+                <tr class="skills data">
+                    <td>
+                        <label>Enter Your Skills:</label>
+                        
+                    </td>
+                    <td>
+                        <input type="text" id="skills" name="Skills" placeholder="Enter your Skills"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <button class="clear">Clear</button>
+                    </td>
+                    <td>
+
+                        <button class="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+       
+       
+       <!--Data displayed in the same screen-->
+       <div class="output">
+           
+           
+       </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
